@@ -1,10 +1,8 @@
-name: Deploy MySQL Docs
+name: Deploy DevDocs
 
 on:
   push:
     branches: [main]
-    paths:
-      - 'mysql/**'
 
 permissions:
   contents: read
@@ -24,9 +22,8 @@ jobs:
           python-version: '3.12'
       - run: pip install mkdocs-material
       - run: mkdocs build
-        working-directory: mysql
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: mysql/site
+          path: site
       - uses: actions/deploy-pages@v4
         id: deployment

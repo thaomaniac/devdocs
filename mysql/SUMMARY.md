@@ -1,20 +1,21 @@
 # Summary
 
-* [Introduction](docs/index.md)
+* [Introduction](../docs/mysql/index.md)
 
 ## Backup
 
-* [mysqldump](docs/backup/mysqldump.md)
+* [mysqldump](../docs/mysql/backup/mysqldump.md)
 
 ## Admin
 
-* [Slow Queries & Processes](docs/admin/performance.md)
-* [Drop All Tables](docs/admin/drop-tables.md)
-
-## Magento
-
-* [Magento Queries](docs/magento.md)
+* [Slow Queries & Processes](../docs/mysql/admin/performance.md)
+* [Drop All Tables](../docs/mysql/admin/drop-tables.md)
 
 ## Reference
 
-* [Cheatsheet](docs/reference/cheatsheet.md)
+* [Data Types](../docs/mysql/reference/datatypes.md)
+* [Cheatsheet](../docs/mysql/reference/cheatsheet.md)
+
+## Magento
+
+* [Magento Queries](../docs/mysql/magento.md)

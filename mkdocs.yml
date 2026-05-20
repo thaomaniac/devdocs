@@ -1,5 +1,5 @@
-site_name: MySQL Docs
-docs_dir: ../docs/mysql
+site_name: DevDocs
+docs_dir: docs
 
 theme:
   name: material
@@ -28,11 +28,13 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Backup:
-      - mysqldump: backup/mysqldump.md
-  - Admin:
-      - Slow Queries & Processes: admin/performance.md
-      - Drop All Tables: admin/drop-tables.md
-  - Magento: magento.md
-  - Reference:
-      - Cheatsheet: reference/cheatsheet.md
+  - MySQL:
+      - Overview: mysql/index.md
+      - Backup:
+          - mysqldump: mysql/backup/mysqldump.md
+      - Admin:
+          - Slow Queries & Processes: mysql/admin/performance.md
+          - Drop All Tables: mysql/admin/drop-tables.md
+      - Magento: mysql/magento.md
+      - Reference:
+          - Cheatsheet: mysql/reference/cheatsheet.md
