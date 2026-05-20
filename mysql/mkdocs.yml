@@ -1,0 +1,38 @@
+site_name: MySQL Docs
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      guess_lang: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+nav:
+  - Home: index.md
+  - Backup:
+      - mysqldump: backup/mysqldump.md
+  - Admin:
+      - Slow Queries & Processes: admin/performance.md
+      - Drop All Tables: admin/drop-tables.md
+  - Magento: magento.md
+  - Reference:
+      - Cheatsheet: reference/cheatsheet.md
